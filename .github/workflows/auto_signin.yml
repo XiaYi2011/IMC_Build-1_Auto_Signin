@@ -16,7 +16,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: setup Node.js 26
+    - name: setup Node.js 25
       uses: actions/setup-node@v4
       with:
         node-version: '25'
