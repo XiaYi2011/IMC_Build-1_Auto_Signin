@@ -1,4 +1,4 @@
-name: Auto Signin
+name: Auto /signin
 
 on:
   # 定时触发 - 每61分钟执行一次
