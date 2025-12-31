@@ -1,2 +1,42 @@
-# IMC_Build-1_Auto_signin
-由ai指导的Java Minecraft IMC服务器建筑服自动签到程序
+# IMC Build-1 自动签到工具
+
+一个由 DeepSeek 指导开发的，用于 **IMC Build-1** 建筑服 Minecraft 服务器的自动签到脚本。
+
+> 🎯 **项目特点**：通过 GitHub Actions 实现每小时自动签到，无需本地部署，安全可靠。
+
+## 🚀 快速开始
+
+只需3步，即可实现自动运行，步骤看似很多实则3分钟搞定。
+
+### 第一步：Fork 本仓库
+点击右上角的 **Fork** 按钮，将此仓库复制到您的个人 GitHub 账户下。
+
+### 第二步：添加账户凭据 (Secrets)
+这是最关键的一步，您需要将您的游戏账号信息加密储存在您的仓库中，脚本会读取它们但**外人无法查看**。
+
+1.  进入您 **Fork 后自己的仓库**。
+2.  点击右上方的 **Settings** 选项卡。
+3.  在左侧边栏找到 **Secrets and variables** > **Actions**。
+4.  点击绿色的 **New repository secret** 按钮，开始添加第一个变量：
+    *   **Name**: `USERNAME`
+    *   **Secret**: 填写您的 **离线ID**
+    *   点击 **Add secret**。
+
+5.  再次点击绿色的 **New repository secret** 按钮，添加第二个变量：
+    *   **Name**: `PASSWORD`
+    *   **Secret**: 填写该ID的 **服务器登录密码**
+    *   点击 **Add secret**。
+
+完成后，您的 Secrets 列表应包含 `USERNAME` 和 `PASSWORD` 两项。
+
+### 第三步：手动触发首次运行（可选）
+1.  在您的仓库页面，点击上方的 **Actions**
+2.  在左侧工作流列表中找到 **“Auto /signin”**
+3.  点击 **Run workflow** 按钮，手动触发一次签到以测试配置是否正确。
+
+**配置完成！** GitHub Actions 将**每隔1小时** 自动运行签到脚本，您可以在 Actions 页面查看每次运行的日志。
+
+## 🔒 关于安全与隐私
+
+1.  **密码不公开**：您通过 Secrets 设置的 `USERNAME` 和 `PASSWORD` 在保存后即被 GitHub 加密存储。**任何人（包括您自己）都无法再次查看明文密码**，只能更新或删除。它们仅在 GitHub 服务器上的私有虚拟环境中被安全地传递给脚本。
+2.  **所有代码公开**：所有自动化逻辑的代码均在仓库中公开，并配有中文注释。您可以随时审查代码，确认其行为**仅用于登录和签到**，不存在任何恶意操作。
