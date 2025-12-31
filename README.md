@@ -6,7 +6,7 @@
 
 # IMC Build-1 自动签到工具
 
-一个由 DeepSeek 指导开发的，用于 **IMC Build-1** 建筑服 Minecraft 服务器的自动签到脚本。
+一个由 DeepSeek 指导开发的，用于离线账户的 **IMC Build-1** 建筑服自动签到脚本。
 
 > 🎯 **项目特点**：通过 GitHub Actions 实现每小时自动签到，无需本地部署，安全可靠。
 
