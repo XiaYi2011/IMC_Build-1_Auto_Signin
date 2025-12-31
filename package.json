@@ -1,0 +1,24 @@
+{
+  "name": "imc_build-1_auto_signin",
+  "version": "1.0.0",
+  "description": "由ai指导的Java Minecraft IMC服务器建筑服自动签到程序",
+  "main": "signin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XiaYi2011/IMC_Build-1_Auto_signin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/XiaYi2011/IMC_Build-1_Auto_signin/issues"
+  },
+  "homepage": "https://github.com/XiaYi2011/IMC_Build-1_Auto_signin#readme",
+  "dependencies": {
+    "minecraft-protocol": "^1.62.0"
+  }
+}
