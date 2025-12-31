@@ -1,11 +1,11 @@
 const m = require('minecraft-protocol'),
     c = {
-        username: 'process.env.USERNAME',
+        username: process.env.USERNAME,
         host: 'off.imc.cab',
         port: 25565,
         version: '1.8.9',
         protocolVersion: 47,
-        password: 'process.env.PASSWORD'
+        password: process.env.PASSWORD
     };
 
 function s(e) {
