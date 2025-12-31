@@ -19,7 +19,7 @@ jobs:
     - name: setup Node.js 26
       uses: actions/setup-node@v4
       with:
-        node-version: '26'
+        node-version: '25'
 
     - name: Run signin.js
       env:
