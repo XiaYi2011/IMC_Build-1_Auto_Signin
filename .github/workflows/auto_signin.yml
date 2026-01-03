@@ -3,6 +3,8 @@ name: Auto /signin
 on:
   # 定时触发 - 每62分钟执行一次
   schedule:
+    # 0:00
+    - cron: '0 0 * * *'
     # 1:02
     - cron: '2 1 * * *'
     # 2:04
