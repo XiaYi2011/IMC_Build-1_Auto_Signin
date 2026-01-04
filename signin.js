@@ -134,7 +134,7 @@ async function h() {
                         });
                         t.i = true;
                         setTimeout(() => {
-                            console.log('签到完成!\n\n————————————————————————————————————');
+                            console.log('\n签到完成!\n————————————————————————————————————');
                             console.log('正在断开连接...');
                             e.end();
                             process.exit(0)
