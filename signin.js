@@ -133,8 +133,8 @@ async function h() {
                             message: '/signin'
                         });
                         t.i = true;
-                        console.log('签到完成!\n\n————————————————————————————————————');
                         setTimeout(() => {
+                            console.log('签到完成!\n\n————————————————————————————————————');
                             console.log('正在断开连接...');
                             e.end();
                             process.exit(0)
