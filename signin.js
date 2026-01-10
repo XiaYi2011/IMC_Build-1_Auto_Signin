@@ -105,6 +105,11 @@ async function h() {
                         });
                         console.log('已发送登录命令')
                     }
+                    if (t.h && n.includes('你需要绑定才能进入这个服务器，如果你已经绑定，请重连服务器')) {
+                        console.log('未绑定，错误退出');
+                        e.end();
+                        process.exit(1)
+                    }
                     if (t.i && n.includes('才能再次领取该奖励!')) {
                         console.log('签到失败，错误退出');
                         e.end();
