@@ -105,6 +105,11 @@ async function h() {
                         });
                         console.log('已发送登录命令')
                     }
+                    if (t.i && n.includes('才能再次领取该奖励!')) {
+                        console.log('签到失败，错误退出');
+                        e.end();
+                        process.exit(1)
+                    }
                 }
             } catch {}
         });
